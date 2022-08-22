@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: rgb(233, 233, 233);
 }
 
@@ -30,7 +30,7 @@ body {
 .image-section {
   position: relative;
   height: 400px;
-  background-image: url("default.jpg");
+  background-image: url('default.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -46,10 +46,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-}
-.settings-btn:hover {
-  color: #f9f9f9;
-  background-color: #333;
+
+  &:hover {
+    color: #f9f9f9;
+    background-color: #333;
+  }
 }
 
 .time-section {
@@ -138,4 +139,4 @@ input {
 .save {
   padding: 10px 20px;
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}
