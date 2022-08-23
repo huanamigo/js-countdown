@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/f643b30ded.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -22,7 +23,7 @@
       <div class="settings active">
         <h1>ustawienia</h1>
         <label for="event-name">Nazwa wydarzenia:</label>
-        <input type="text" id="event-name" value="Nowy rok" />
+        <input type="text" class="event-name" value="Nowy rok" />
         <table class="date">
           <tr>
             <td><label for="event-day">Dzień:</label></td>
@@ -31,18 +32,28 @@
           </tr>
           <tr>
             <td>
-              <input type="number" id="event-day" maxlength="2" value="1" />
+              <input type="number" class="event-day" maxlength="2" value="1" />
             </td>
             <td>
-              <input type="number" id="event-month" maxlength="2" value="1" />
+              <input
+                type="number"
+                class="event-month"
+                maxlength="2"
+                value="1"
+              />
             </td>
             <td>
-              <input type="number" id="event-year" maxlength="4" value="2021" />
+              <input
+                type="number"
+                class="event-year"
+                maxlength="4"
+                value="2021"
+              />
             </td>
           </tr>
         </table>
         <label for="event-image">Link do obrazka:</label>
-        <input type="text" id="event-image" value="default.jpg" />
+        <input type="text" class="event-image" value="default.jpg" />
 
         <button class="save">Zapisz</button>
       </div>
@@ -74,7 +85,5 @@
         </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
